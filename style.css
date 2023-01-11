@@ -1,0 +1,267 @@
+
+body.wrapper {
+  height: 90vh;
+  color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+}
+
+/*  NAV */
+
+nav {
+  height: 83px;
+  display: flex;
+  margin-bottom: 97px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav-brand-logo {
+  display: none;
+}
+
+/* END OF NAV BAR STYLE */
+
+/* SEARCH-SETTINGS */
+#search-bar {
+  width: 750.237px;
+}
+
+#search-bar input {
+  margin-top: -249px;
+  width: 92%;
+  outline: yellow;
+  color: rgba(0, 0, 0, 0.621);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: gray;
+  transition: 0.2s ease border-bottom-left-radius,
+    0.2s ease border-bottom-right-radius;
+}
+
+.search-query::-webkit-input-placeholder {
+  font-size: medium;
+  color: white;
+}
+
+#search-bar .search-btn {
+  margin-top: -249px;
+  width: 11%;
+  background-color:gray;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 48px;
+}
+
+.searchbar-logo {
+  display: flex;
+  margin-top: 101px;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar-logo img {
+  width: 61px;
+  height: 39;
+  margin-left: -1169px;
+  margin-top: -310px;
+}
+
+/* END OF SEARCH-SETTINGS */
+
+/* SEARCH-RESULT SUGGESTIONS */
+#search-list {
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+}
+
+.hide-search-list {
+  display: none;
+}
+/* END OF SEARCH-RESULT SUGGESTIONS */
+
+/* FAVOURITES SETTINGS */
+.fav-tiles div {
+  margin: auto;
+  padding: 31px 51px;
+  align-items: center;
+  justify-content: center;
+}
+/* END OF FAVOURITES SETTINGS */
+
+/*MOVIE-INFO SETTINGS */
+section {
+  height: auto;
+  margin-top: 201px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#movie-image img {
+  width: 301px;
+  height: 451px;
+  margin-left: 51px;
+  margin-right: 101px;
+  border: 5px solid whitesmoke;
+}
+
+#movie-info {
+  width: 451px;
+  height: 451px;
+  color: azure;
+}
+
+#movie-info h1 {
+  color: chartreuse;
+  text-align: left;
+  font-weight: bold;
+  font-size: xx-large;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 29%), 2px 4px 7px rgb(73 64 125 / 35%);
+}
+
+.heart {
+  cursor: pointer;
+  margin-right: 11px;
+}
+
+#movie-info p {
+  margin: 16px 0;
+}
+
+p span {
+  font-weight: bold;
+}
+
+.mv-lang {
+  opacity: 0.7;
+  color:chartreuse;
+}
+
+#movie-info p:last-child span {
+  opacity: 1;
+  color:chartreuse;
+}
+
+#movie-info p:last-child {
+  opacity: 0.7;
+}
+
+/* END OF MOVIE-INFO SETTINGS */
+
+/*FAVOURITE-PAGE STYLEING */
+
+#favourite-result {
+  opacity: 0;
+  margin: auto;
+  width: fit-content;
+  transition: 0.1s linear opacity;
+}
+
+.fav-list {
+  display: grid;
+  margin: 0px auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fav-res-img:hover {
+  background-size: 100.9%;
+}
+
+.fav-res-img {
+  width: 350px;
+  height: 525px;
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.2s linear background-size;
+}
+
+.remove-fav {
+  opacity: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: o.2s ease opacity, o.2s ease background-color, o.2s ease color;
+}
+
+.remove-fav:hover {
+  opacity: 1;
+  background-color: black;
+  color: rgb(235, 84, 84);
+}
+
+.footer {
+  margin: auto;
+  margin-top: 301px;
+}
+
+/* END OF FAVOURITE-PAGE STYLEING */
+
+/* MEDIA-QUERIES */
+@media only screen and (max-device-width: 1520px) {
+  #favourite-result div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-device-width: 1130px) {
+  #favourite-result div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-device-width: 741px) {
+  #search-bar {
+    width: 351px;
+  }
+
+  .greeting-message {
+    display: none;
+  }
+
+  section {
+    margin-top: 62px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #movie-image {
+    margin-bottom: 41px;
+  }
+
+  #movie-image img {
+    width: 201px;
+    height: 301px;
+    margin: 0 101px;
+    border: 5px solid whitesmoke;
+  }
+
+  #movie-info h1 {
+    text-align: center;
+  }
+
+  #movie-info {
+    width: 81%;
+  }
+
+  #movie-info p {
+    margin: 15px auto;
+  }
+
+  .footer {
+    margin-bottom: 101px;
+  }
+
+  #favourite-result > h2 {
+    margin: auto;
+    width: fit-content;
+  }
+
+  #favourite-result div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
